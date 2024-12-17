@@ -1,12 +1,12 @@
 import wespeaker
 
 # モデルのパスを指定
-model_dir = 'ResNet34_download_dir'
+model_dir = "wespeaker-cnceleb-resnet34-LM"
 model = wespeaker.load_model_local(model_dir)
 # model.set_gpu(0)
 
 # 音声ファイルのパスを指定
-audio_file = 'JA_B00000_S00529_W000007.wav'
+audio_file = 'JA_B00000_S00529_W000007.mp3'
 
 # 話者ダイアリゼーションの実行
 diarization_result = model.diarize(audio_file)
